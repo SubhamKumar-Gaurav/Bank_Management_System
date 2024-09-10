@@ -9,22 +9,22 @@ mydb = sql.connect(
         database="bank"
 ) 
 
+cursor=mydb.cursor() 
 
-cursor = mydb.cursor() 
 
-def create_customer_table() :
-        cursor.execute('''
+def createcustomertable() :
+    cursor.execute('''
                CREATE TABLE IF NOT EXISTS customers 
-             ( username VARCHAR(20),
+               (username VARCHAR(20) ,
                password VARCHAR(20), 
-               name varchar(20), 
+               name VARCHAR(20) , 
                age INTEGER, 
                city VARCHAR(20), 
                account_number INTEGER, 
-               status BOOLEAN       )
-''')
-        
+               status BOOLEAN )
+        ''')
+
 mydb.commit() 
 
-if __name__=="main" : 
-        create_customer_table() 
+if __name__ == "__main__" :
+    createcustomertable()
