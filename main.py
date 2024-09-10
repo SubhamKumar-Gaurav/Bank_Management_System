@@ -1,3 +1,5 @@
+from register import *
+
 print("Welcome to Subham Bank, Paisa hi Paisa hai mere paas !!")
 
 while True :
@@ -6,7 +8,8 @@ while True :
                              "2. SignIn"))
         
         if register==1 or register==2 :
-            pass 
+            if register==1 : 
+                SignUp() 
         else :
             print("Please Enter Valid Input From Options")
     except ValueError :
