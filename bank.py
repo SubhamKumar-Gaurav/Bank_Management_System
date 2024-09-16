@@ -3,7 +3,6 @@
 from database import *
 import datetime
 
-
 class Bank:
     def __init__(self, username, account_number):
         self.__username = username
