@@ -2,7 +2,7 @@ from register import *
 from bank import * 
 
 status=False 
-print("Welcome to My Bank, Bahut Paisa hai mere paas !!")
+print("Welcome to My Bank, your gateway to hassle-free, secure banking! ")
 
 while True :
     try :
