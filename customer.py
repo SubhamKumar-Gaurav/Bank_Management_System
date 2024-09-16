@@ -11,5 +11,5 @@ class Customer :
         self.__account_number = account_number 
     
     def createuser(self) : 
-        temp=db_query(f"INSERT INTO customers VALUES ('{self.__username}', '{self.__password}', '{self.__name}', '{self.__age}', '{self.__city}', '{self.__account_number}', 'True' );") 
+        db_query(f"INSERT INTO customers VALUES ('{self.__username}', '{self.__password}', '{self.__name}', '{self.__age}', '{self.__city}',0, '{self.__account_number}', 1 );") 
         mydb.commit() 
