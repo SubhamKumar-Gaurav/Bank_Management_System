@@ -12,4 +12,4 @@ class Customer :
     
     def createuser(self) : 
         temp=db_query(f"INSERT INTO customers VALUES ('{self.__username}', '{self.__password}', '{self.__name}', '{self.__age}', '{self.__city}', '{self.__account_number}', 'True' );") 
-        mydb.commit()
+        mydb.commit() 

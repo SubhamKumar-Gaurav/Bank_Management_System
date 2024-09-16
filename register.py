@@ -1,6 +1,7 @@
 # User registration - SignIn/SignUp 
 
 from database import * 
+from customer import *
 import random
 def SignUp() :
     username=input("Create Username: ") 
@@ -8,7 +9,7 @@ def SignUp() :
     if temp :
         print("Username Already Exists") 
         SignUp()
-    else :
+    else : 
         print("Username is Available Please Proceed")  
         password=input("Enter Your Password ") 
         name = input("Enter Your Name: ") 
@@ -21,4 +22,6 @@ def SignUp() :
                 continue 
             else :
                 print(account_number)
-                break 
+                break  
+    cobj=Customer(username, password, name, age, city, account_number)     
+    cobj.createuser() 
