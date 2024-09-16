@@ -6,6 +6,7 @@ from customer import *
 import random 
 from bank import Bank 
 
+# Function for User SignUp 
 def SignUp() :
     username=input("Create Username: ") 
     temp=db_query(f"SELECT username FROM customers where username = '{username}';") 
@@ -32,6 +33,7 @@ def SignUp() :
     bobj=Bank(username,account_number) 
     bobj.create_transaction_table() 
 
+# Function for User SignIn 
 def SignIn() :
     username = input("Enter Username: ")
     temp = db_query(f"SELECT username FROM customers where username = '{username}';")
